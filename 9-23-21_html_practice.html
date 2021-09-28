@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>9-23-21 deno on html multi media and more</title>
+        <link rel="shortcut icon" href="chrome_logo.jpeg" type="image/x-icon">
+    </head>
+
+    <body>
+        <header id="page_header">
+            <nav id="nav_bar">
+                <menu>
+                    <li><a href="#multimedia">HTML Multimedia</a></li>
+                    <li><a href="#tables">HTML tables</a></li>
+                    <li><a href="#usefultags">HTML usefultags</a></li>
+                </menu>
+            </nav>
+            <h1>Demo on Multimedia Elements and More</h1>
+        </header>
+
+        <main id="page_main_content">
+            <section id="multimedia">
+                <div id="audio_files">
+                    <h2>Demo of and including an audio file</h2>
+                    <audio src="file_example_MP3_2MG.mp3#t=00:30" controls>
+                        Audio File Not Supported by your browser
+                    </audio>
+                </div>
+                <hr>
+                <div id="video_files">
+                    <h3>Demo of and including an video file</h3>
+                    <video src="file_example_MOV_1920_2_2MB.mov" controls width="40%">
+                        Video File Not Supported By your browser
+                    </video>
+                </div>
+            </section>
+
+            <section id="tables">
+                <h4>Demo on HTML tables</h4>
+                <p>Below is an exaple od an html table</p>
+
+                <table id="HTML_table table1" border="1">
+                    <tr>
+                         <!--Row1-->
+                        <th>Menu Id</th>
+                        <th>Menu Items</th>
+                        <th>Price</th>
+                    </tr>
+                    <hr>
+                    <tr>
+                        <!--Row2-->
+                        <td>1</td>
+                        <td>Pizza</td>
+                        <td>$10.00</td>
+                    </tr>
+                    
+                    <tr>
+                        <!--Row3-->
+                        <td>2</td>
+                        <td>Gnochhi</td>
+                        <td>$12.99</td>
+                    </tr>
+                </table>
+                <hr>
+
+                <table id="html_table_2" border="2">
+                    <caption>Demo rowspan</caption>
+                    <tr>
+                        <!--Row1-->
+                       <th>child name</th>
+                       <th>parent name</th>
+                   </tr>
+                    <tr>
+                        <td rowspan="2">john</td>
+                        <td>jill</td>
+                    </tr>
+                    <tr>
+                        <td>jack</td>
+                    </tr>
+                </table>
+                    <table id="html_table_3" border="2">
+                        <caption>Demo colspan</caption>
+                    <tr>
+                        <td colspan="2">john</td>
+                        <td>jill</td>
+                    </tr>
+
+                    <tr>
+                        <td>jack</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="usefultags">
+                <h5>some usefultags</h5>
+                <h6>some block quotes</h6>
+                <h6>the blockquote Element</h6>
+                <blockquote cite="https://google.com">
+                    "YOLO" - Thr Web
+                </blockquote>
+
+
+                <h6>the summary and details element</h6>
+                <summary>
+                    click here for match results spoiler
+                    <details> Rams 50:2 Lions</details>
+                </summary>
+
+                <h3>Some inlinr text</h3>
+                <h4>cite tag</h4>
+                the web page of ou is <cite>www.oakland.edu</cite>
+
+                <h4>the abbreviation tag</h4>
+                few of the course codes in ou are <abbr title="computer science">CSI</abbr>
+
+                <h4>subscript & superscript</h4>
+                <p> a<sub>2</sub>+ b <sup>2</sup> + 2a*b=(a+b)<sup>2</sup></p>
+
+                <h4>the code element</h4>
+                <code>C++ coding</code>
+                <code>
+                    cout &lt; &lt; hello, world;
+                </code>
+
+                <h4>time tag</h4>
+                classes start this fall from <time datetime="2021-09-02">SEP 02</time>
+
+                <h3>tags that require javascript to be full functional</h3>
+                <h4>button tag</h4>
+                <a href="#page_header">
+                <button type="menu">Go to top</button>
+                </a>
+
+                <h4>the bdo tag</h4>
+                <bdo dir="ltr">this is left to right orientation</bdo>
+                <bdo dir="rtl">this is right to left orientation</bdo>
+
+                <h4>the iframe element</h4>
+                <iframe src="https://www.oakland.edu" frameborder="1" width="30%">
+                    Sorry this page is not suppoorted by your browser</iframe>
+
+                <h4>the progress & meter tag</h4>
+                <h5>the progress element</h5>
+                
+                <label for="survey_progress">survey_progress</label>
+                <progress id="survey_progress" min="2" max="7"></progress>
+            </section>
+        </main>
+        <hr>
+        <footer id="page_footer">
+            <address>
+                115, library Drive, Engineering center<br>
+                Oakland University, Rchster, Michigan, 48039
+            </address> 
+        </footer>
+    </body>
+</html>
